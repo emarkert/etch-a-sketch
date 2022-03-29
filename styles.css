@@ -1,7 +1,32 @@
 .canvas-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: stretch;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    aspect-ratio: 1;
+    max-width: 960px;
+    background-color: #efefef;
+    border: 2px;
+    border-style: solid;
+    border-color: #aaa;
+}
+
+.grid-square {
+    background-color: #efefef;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border-radius: 50%;
+    border: none;
+	width: 64px;
+    height: 64px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 50%;
 }
