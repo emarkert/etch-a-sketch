@@ -8,12 +8,22 @@
     <title>Etch-A-Sketch 9000</title>
 </head>
 <body>
+    <header>
+        <h1>ETCH-A-SKETCH 9000</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <input type="color" name="color-picker" id="colorPicker" value="#222222">
+            <div id="current-size" class="canvas-size">16 x 16</div>
+            <input type="range" name="canvas-size" id="sizeSlider" min="1" max="100" value="16">
+            <button>RAINBOW</button>
+            <button id="clear-btn" >CLEAR</button>
+        </div>
 
-    <div class="canvas"></div>
+        <div id='grid' class="canvas"></div>
 
-    <input type="range" name="canvas-size" id="canvasSlider" min="1" max="100" value="1">
-
-    <input type="color" name="color-picker" id="colorPicker" value="#000000">
+    </main>
+    
     
     <script src="etchasketch.js" defer></script>
 </body>
