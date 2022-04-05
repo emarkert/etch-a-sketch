@@ -1,4 +1,3 @@
-//setting up variable for the canvas size slider
 const canvasSlider = document.querySelector('#canvasSlider');
 
 //setting up canvas wrapper variable
