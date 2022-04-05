@@ -53,7 +53,6 @@ function drawGrid(size) {
 
 function changeColor(e) {
   e.target.style.backgroundColor = currentColor
-  
 }
 
 window.onload = () => {
