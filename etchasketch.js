@@ -46,7 +46,6 @@ function drawGrid(size) {
         const newDiv = document.createElement('div')
         newDiv.classList.add("grid-square")
         newDiv.addEventListener('mouseover', changeColor)
-        newDiv.addEventListener('mousedown', changeColor)
         grid.appendChild(newDiv)
     }
 }
